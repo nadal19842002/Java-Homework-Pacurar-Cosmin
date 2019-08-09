@@ -1,50 +1,50 @@
 package assignment;
 
 public class Triangle implements Shape {
-    private double lungime1;
-    private double lungime2;
-    private double lungime3;
-    private double inaltimeaTriunghiului;
+    private double length1;
+    private double length2;
+    private double length3;
+    private double triangleHeight;
 
-    public Triangle(double lungime1, double lungime2,double lungime3,double inaltimeaTriunghiului){
-        this.lungime1=lungime1;
-        this.lungime2=lungime2;
-        this.lungime3=lungime3;
-        this.inaltimeaTriunghiului=inaltimeaTriunghiului;
+    public Triangle(double length1, double length2, double length3, double triangleHeight){
+        this.length1 = length1;
+        this.length2 = length2;
+        this.length3 = length3;
+        this.triangleHeight = triangleHeight;
     }
 
-    public double getLungime1(){
-        return lungime1;
+    public double getLength1(){
+        return length1;
     }
 
-   public void setLungime1(double lungime1){
-        this.lungime1 = lungime1;
+   public void setLength1(double length1){
+        this.length1 = length1;
    }
 
-    public double getLungime2(){
-        return lungime2;
+    public double getLength2(){
+        return length2;
     }
 
-    public void setLungime2(double lungime2){
-        this.lungime2 = lungime2;
+    public void setLength2(double length2){
+        this.length2 = length2;
     }
 
-    public double getLungime3(){
-        return lungime3;
+    public double getLength3(){
+        return length3;
     }
 
-    public void setLungime3(double lungime3){
-        this.lungime3 = lungime3;
+    public void setLength3(double length3){
+        this.length3 = length3;
     }
 
     @Override
     public double getArea(){
-        double f = (lungime1*inaltimeaTriunghiului)/2.0;
+        double f = (length1 * triangleHeight)/2.0;
         return f;
     }
     @Override
     public double getPerimeter(){
-        double g = lungime1+lungime2+lungime3;
+        double g = length1 + length2 + length3;
         return g;
     }
     public String toString(){

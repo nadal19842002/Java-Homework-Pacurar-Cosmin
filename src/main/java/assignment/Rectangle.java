@@ -1,38 +1,38 @@
 package assignment;
 
 public class Rectangle implements Shape {
-    private double lungime;
-    private double latime;
+    private double rectangleLenght;
+    private double rectangleWidth;
 
-    public Rectangle(double lungime,double latime){
-        this.lungime = lungime;
-        this.latime = latime;
+    public Rectangle(double rectangleLenght, double rectangleWidth){
+        this.rectangleLenght = rectangleLenght;
+        this.rectangleWidth = rectangleWidth;
     }
 
-    public double getLungime(){
-        return lungime;
+    public double getRectangleLenght(){
+        return rectangleLenght;
     }
 
-    public void setLungime(double lungime){
-        this.lungime = lungime;
+    public void setRectangleLenght(double rectangleLenght){
+        this.rectangleLenght = rectangleLenght;
     }
 
-    public double getLatime(){
-        return latime;
+    public double getRectangleWidth(){
+        return rectangleWidth;
     }
 
-    public void setLatime(double latime){
-        this.latime = latime;
+    public void setRectangleWidth(double rectangleWidth){
+        this.rectangleWidth = rectangleWidth;
     }
 
     @Override
     public double getArea(){
-        double v = lungime * latime;
+        double v = rectangleLenght * rectangleWidth;
         return v;
     }
     @Override
     public double getPerimeter(){
-        double x = 2*(lungime + latime);
+        double x = 2*(rectangleLenght + rectangleWidth);
         return x;
     }
     @Override
