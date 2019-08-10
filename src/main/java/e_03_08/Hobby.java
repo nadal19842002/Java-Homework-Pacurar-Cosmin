@@ -1,44 +1,51 @@
 package e_03_08;
 
-import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Objects;
 
 public class Hobby {
-    private String hobby;
+    private String hobbyName;
     private int frequence;
-    private List<Adresa> adresa;
+    private Adress adress;
 
-public Hobby(String hobby, int frequence, List<Adresa> adresa){
-    this.hobby = hobby;
-    this.frequence = frequence;
-    this.adresa = adresa;
-}
-
-    public String getHobby() {
-        return hobby;
+    public Hobby(String hobbyName,Adress adress ){
+        this.hobbyName=hobbyName ;
+        this.adress = adress;
     }
 
-    public void setHobby(String hobby) {
-        this.hobby = hobby;
+    public String getHobbyName() {
+        return hobbyName;
     }
 
-    public int getFrequence() {
-        return frequence;
+    public void setHobbyName(String hobbyName) {
+        this.hobbyName = hobbyName;
     }
 
-    public void setFrequence(int frequence) {
-        this.frequence = frequence;
+    public Adress getAdress() {
+        return adress;
     }
 
-    public List<Adresa> getAdresa() {
-        return adresa;
+    public void setAdress(Adress adress) {
+        this.adress = adress;
     }
 
-    public void setAdresa(List<Adresa> adresa) {
-        this.adresa = adresa;
-    }
     @Override
-    public String toString(){
-    return "His hobby is" + hobby +", he is practicing "+frequence +" times per week, and he can practice at "
-            + adresa;
+    public String toString() {
+        return "Hobby"+ hobbyName;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Hobby hobby = (Hobby) o;
+        return hobbyName.equals(hobby.hobbyName) &&
+                adress.equals(hobby.adress);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(hobbyName, adress);
     }
 }

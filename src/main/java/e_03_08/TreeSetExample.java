@@ -15,7 +15,7 @@ public class TreeSetExample {
         Persoana person3 = new Persoana("Cristina Pacurar", 26);
         Persoana person4 = new Persoana("Ion Ionescu",48);
 
-       treeSet1.add(person1);
+        treeSet1.add(person1);
         treeSet1.add(person2);
         treeSet1.add(person3);
         treeSet1.add(person4);
