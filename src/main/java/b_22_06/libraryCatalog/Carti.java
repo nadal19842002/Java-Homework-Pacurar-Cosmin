@@ -8,25 +8,25 @@ public class Carti {
 
     public Carti (String nume) {
         this.nume = nume;
-
     }
 
-    ArrayList<String> array = new ArrayList<>(5);
+    ArrayList<String> array = new ArrayList<String>(5);
 
     public void adaugaCarti (String nume) {
-        array.add(nume);
-        array.add(nume);
-        array.add(nume);
-        array.add(nume);
-
-    }
-    public void stergeCarti (String nume) {
-        array.remove(0);
-        array.remove(1);
-
-    }
-    public String toString() {
-        return nume;
+        array.add(0,"Neamul Soimarestilor");
+        array.add(1,"Ion");
+        array.add(2,"Dragnea");
+        array.add(3,"Halkidiki");
+        array.add(4,"Mizerabilii");
     }
 
-}
+    public String stergeCarti (String nume) {
+        return array.remove(0);
+        //return array.remove(1);
+
+
+    }
+
+    }
+
+

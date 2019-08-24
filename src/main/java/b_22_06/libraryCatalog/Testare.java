@@ -14,8 +14,5 @@ public class Testare {
         albume.adaugaCarti("Caracuda");
 
         albume.stergeCarti("Picasso");
-
-
-
     }
 }

@@ -2,24 +2,18 @@ package b_22_06;
 
 public class RefactorSmallestNumberArray {
     public static void main(String[] args) {
-        int [] array = {1,4,7};
-        System.out.print(smallest(array));
+System.out.println(smallestNumberArray());
     }
-    public static int smallest (int[] a){
-         a = {10,20,30};
-        int min = a[0];
-        for(int i=0;i<=a.length-1;i++){
-            if (a[i] < min)
-                min = a[i];}
-        for (int e: a) {
-            if (e < min)
-                System.out.println("Elementul cu valoarea minima este" + " " + e);
-            else
-                continue;
+
+    public static int smallestNumberArray() {
+        int[] array = {10, 20, 30};
+        int min = array[0];
+        for (int i = 0; i <= array.length - 1; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }
+
         }
         return min;
     }
-
-
-
 }
